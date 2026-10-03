@@ -60,9 +60,18 @@ NMCLE Quiz App is designed for medical students, doctors, and healthcare profess
 
 ---
 
-## 6. Data Security & Retention
+## 6. Account & Data Deletion (Google Play & Apple Compliant)
 
-We prioritize the security of your data. Since user quiz progress is primarily stored on your local device, you can delete all saved quiz data at any time by clearing the application's storage in your Android device settings or uninstalling the app.
+We respect your right to control your personal data:
+- **In-App Account Deletion:** Any user logged into an account can permanently delete their account and associated data directly within the app:
+  1. Tap the **Profile** icon in the top right corner.
+  2. Scroll to the bottom of the profile dialog and tap **"Delete Account & Data"**.
+  3. Confirm the permanent deletion prompt.
+- **What is Deleted:**
+  - Your user authentication record is permanently deleted from **Firebase Authentication**.
+  - All user documents, bookmarks, and quiz progress stored in **Google Cloud Firestore** under `users/{uid}` and `usernames/{username}` are permanently wiped.
+  - All locally stored user attempt history and cached data on the device (Room Database) are cleared.
+- **Guest / Local Users:** Users practicing without an account can clear all locally stored data at any time via Android **Settings > Apps > NMCLE Quiz App > Storage > Clear Storage** or by uninstalling the application.
 
 ---
 
