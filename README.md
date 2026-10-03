@@ -1,1 +1,0 @@
-# sarathi-lab.github.io
